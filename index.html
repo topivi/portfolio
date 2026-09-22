@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topi Virkki — Engineering Leader & Software Craftsman</title>
+  <meta name="description" content="Personal portfolio of Topi Virkki — Senior Engineering Manager, software craftsman, and agile leader with over 30 years of technology experience.">
+  <meta name="keywords" content="Topi Virkki, Engineering Manager, Software Development, Agile, Scrum Master, Fortum, Finland, Retro Computing">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Topi Virkki Home">
+        <span class="brand-monogram">&lt;TV /&gt;</span>
+        <span class="brand-name">Topi Virkki</span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#leadership" class="nav-link">Leadership</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#philosophy" class="nav-link">Philosophy</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Retro Easter Egg Button -->
+        <button class="icon-btn" id="retro-btn" title="C64 Retro Terminal Easter Egg" aria-label="Retro Terminal">
+          🕹️
+        </button>
+        <!-- Theme Toggle -->
+        <button class="icon-btn" id="theme-toggle" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <span class="theme-icon sun-icon">☀️</span>
+          <span class="theme-icon moon-icon">🌙</span>
+        </button>
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            <span>Senior Engineering Manager &amp; Software Craftsman</span>
+          </div>
+          <h1 class="hero-title">
+            Building empowered teams &amp; <span class="gradient-text">enduring software.</span>
+          </h1>
+          <p class="hero-description">
+            Hi, I’m <strong>Topi Virkki</strong>. With over three decades in software engineering, I combine deep technical foundations with empathetic engineering leadership—mentoring developers, shaping agile cultures, and guiding mission-critical platforms in Finland.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#experience" class="btn btn-primary">
+              <span>View Experience</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            <button class="btn btn-ghost" id="hero-retro-trigger">
+              <span class="tag-accent">8-Bit Origins</span>
+            </button>
+          </div>
+          
+          <div class="social-links-row">
+            <a href="https://www.linkedin.com/in/topivirkki/" target="_blank" rel="noopener noreferrer" class="social-link" title="Connect on LinkedIn">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:topi.virkki@gmail.com" class="social-link" title="Send Email">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email</span>
+            </a>
+            <span class="location-tag">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Espoo, Finland</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card-glass">
+            <div class="avatar-ring">
+              <div class="avatar-inner">
+                <span class="avatar-initials">TV</span>
+              </div>
+            </div>
+            <div class="card-info">
+              <h3>Topi Virkki</h3>
+              <p class="role-text">Senior Manager, Development Studio</p>
+              <p class="company-text">Fortum</p>
+            </div>
+            <div class="card-pills">
+              <span class="skill-tag">Agile Leadership</span>
+              <span class="skill-tag">Talent Mentorship</span>
+              <span class="skill-tag">30+ Yrs Code</span>
+              <span class="skill-tag">C64 Enthusiast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Ribbon -->
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">30+</span>
+          <span class="stat-label">Years of Software Craft</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Years Agile &amp; Tech Leadership</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">Engineers &amp; Trainees Mentored</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">8-bit → Cloud</span>
+          <span class="stat-label">Architectural Evolution</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Background</span>
+          <h2 class="section-title">A Journey of Passion, Code &amp; People</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <p class="lead-text">
+              My software journey began in the golden era of 8-bit home computers, writing assembly and BASIC on the Commodore 64. That curiosity about how computers tick at the metal level sparked a lifelong career in software engineering.
+            </p>
+            <p>
+              Over the past three decades, technology has dramatically evolved from monolithic on-premise systems to cloud-native microservices and intelligent platforms. Through it all, one fundamental truth remains: <strong>software is built by people, for people</strong>.
+            </p>
+            <p>
+              Today, as a <strong>Senior Manager at Fortum</strong>, I channel that technical depth into building high-performing, psychologically safe engineering teams. I specialize in bridging business needs with technical excellence, driving recruitment for future talent (including trainee initiatives), and mentoring developers through their career milestones.
+            </p>
+            <div class="quote-box">
+              <blockquote>
+                "True leadership in software isn’t about dictating solutions—it’s about cultivating an environment where developers have the autonomy, clarity, and psychological safety to craft brilliant work."
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <div class="highlight-icon">🌱</div>
+              <h4>Nurturing Next-Gen Talent</h4>
+              <p>Passionate about youth recruitment, summer trainee programs, and junior software engineer coaching—unlocking potentials early in their careers.</p>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-icon">🤝</div>
+              <h4>Agile &amp; Scrum Mastery</h4>
+              <p>Seasoned practitioner advocating pragmatic agile processes, continuous feedback, elimination of bottlenecks, and clear team direction.</p>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-icon">💻</div>
+              <h4>Enduring Craftsmanship</h4>
+              <p>Believer in clean code, robust architecture, and code that stands the test of time, drawing on decades of hands-on software development.</p>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-icon">🕹️</div>
+              <h4>Retro Roots &amp; Tinkering</h4>
+              <p>Active interest in retro computing, 8-bit systems, demo culture, and vintage electronics that celebrate the roots of modern computing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership & Pillars Section -->
+    <section class="section section-alt" id="leadership">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Core Capabilities</span>
+          <h2 class="section-title">Leadership &amp; Technical Pillars</h2>
+          <p class="section-subtitle">Balancing people leadership, strategic agile delivery, and deep software engineering acumen.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-wrapper">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3>People &amp; Team Leadership</h3>
+            <p>Cultivating inclusive engineering cultures rooted in trust, transparency, and high performance.</p>
+            <ul class="pillar-list">
+              <li>Developer Mentorship &amp; Growth Pathways</li>
+              <li>Trainee &amp; Junior Talent Recruitment Programs</li>
+              <li>Engineering Team Organization &amp; Scaling</li>
+              <li>Psychological Safety &amp; Retention</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-wrapper">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <h3>Agile &amp; Delivery Excellence</h3>
+            <p>Practical application of Scrum and agile principles to ship meaningful value iteratively.</p>
+            <ul class="pillar-list">
+              <li>Certified Scrum Master Experience</li>
+              <li>Continuous Improvement &amp; Retrospectives</li>
+              <li>Cross-functional Alignment (Tech + Product)</li>
+              <li>Friction Reduction &amp; Flow Optimization</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-wrapper">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3>Software Architecture &amp; Craft</h3>
+            <p>Three decades of building, maintaining, and modernizing robust software systems.</p>
+            <ul class="pillar-list">
+              <li>Enterprise Systems &amp; Modern Web Architectures</li>
+              <li>Clean Architecture &amp; Test-Driven Mindset</li>
+              <li>Systems Evolution &amp; Technical Debt Management</li>
+              <li>Low-Level &amp; Computer Architecture Roots</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Track Record</span>
+          <h2 class="section-title">Career Milestones</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Senior Manager, Development Studio</h3>
+                  <span class="timeline-company">Fortum</span>
+                </div>
+                <span class="timeline-period">Current</span>
+              </div>
+              <p class="timeline-desc">
+                Leading software development teams, guiding technical strategy, and spearheading developer talent recruitment. Directing summer trainee programs, nurturing young engineers, and empowering team autonomy within a forward-looking energy corporation.
+              </p>
+              <div class="timeline-tags">
+                <span>Team Leadership</span>
+                <span>Recruitment</span>
+                <span>Mentorship</span>
+                <span>Strategic Alignment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Scrum Master &amp; Agile Coach</h3>
+                  <span class="timeline-company">Fortum Tech</span>
+                </div>
+                <span class="timeline-period">Past Roles</span>
+              </div>
+              <p class="timeline-desc">
+                Fostered agile methodologies across development squads, eliminated organizational blockers, and created collaborative feedback loops to accelerate delivery speed and software reliability.
+              </p>
+              <div class="timeline-tags">
+                <span>Scrum</span>
+                <span>Agile Transformation</span>
+                <span>Process Coaching</span>
+                <span>Team Dynamics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Senior Software Developer &amp; Architect</h3>
+                  <span class="timeline-company">Enterprise &amp; Consulting</span>
+                </div>
+                <span class="timeline-period">Multi-Year Tenure</span>
+              </div>
+              <p class="timeline-desc">
+                Designed, implemented, and maintained complex software architectures across full-stack systems. Authored clean, scalable codebases, mentored junior engineers, and championed code review best practices.
+              </p>
+              <div class="timeline-tags">
+                <span>System Architecture</span>
+                <span>Full-Stack Development</span>
+                <span>Code Quality</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">The Foundational Era</h3>
+                  <span class="timeline-company">8-Bit Systems &amp; Beyond</span>
+                </div>
+                <span class="timeline-period">1990s – Origins</span>
+              </div>
+              <p class="timeline-desc">
+                Cut teeth on assembly language, C, and retro machines like the Commodore 64. Gained an intimate appreciation of memory management, CPU cycles, and fundamental computer science principles that continue to inform high-level architectural decisions today.
+              </p>
+              <div class="timeline-tags">
+                <span>Assembly &amp; C</span>
+                <span>Hardware Constraints</span>
+                <span>Pure Craftsmanship</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="section section-alt" id="philosophy">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Guiding Principles</span>
+          <h2 class="section-title">How I Approach Tech &amp; Leadership</h2>
+        </div>
+
+        <div class="philosophy-grid">
+          <div class="philosophy-card">
+            <span class="philosophy-num">01</span>
+            <h3>Pragmatism Over Hype</h3>
+            <p>Adopt technologies that solve genuine business problems and are maintainable long-term. Hype cycles come and go; sound design patterns and clean architectures endure.</p>
+          </div>
+
+          <div class="philosophy-card">
+            <span class="philosophy-num">02</span>
+            <h3>Empowerment &amp; Trust</h3>
+            <p>Great developers thrive when given ownership and trust. Leadership is about setting the vision, removing obstacles, and stepping aside to let craftsmanship shine.</p>
+          </div>
+
+          <div class="philosophy-card">
+            <span class="philosophy-num">03</span>
+            <h3>Mentorship as a Multiplier</h3>
+            <p>Investing time in trainees and junior developers pays the highest compound interest. A rising tide of talent elevates the entire engineering organization.</p>
+          </div>
+
+          <div class="philosophy-card">
+            <span class="philosophy-num">04</span>
+            <h3>Respect the Foundations</h3>
+            <p>No matter how high our abstractions reach, understanding underlying system realities makes us better architects, debuggers, and problem solvers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <span class="section-kicker">Get in Touch</span>
+            <h2 class="section-title">Let’s Connect &amp; Collaborate</h2>
+            <p class="contact-desc">
+              Whether you’d like to discuss engineering management, agile culture, software craftsmanship, trainee recruitment, or reminisce about 8-bit computers—I’d love to hear from you.
+            </p>
+          </div>
+
+          <div class="contact-channels">
+            <a href="https://www.linkedin.com/in/topivirkki/" target="_blank" rel="noopener noreferrer" class="channel-card">
+              <div class="channel-icon">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.761-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div class="channel-text">
+                <span class="channel-title">LinkedIn</span>
+                <span class="channel-sub">Connect &amp; Message</span>
+              </div>
+            </a>
+
+            <div class="channel-card copy-email-card" id="copy-email-btn" role="button" tabindex="0">
+              <div class="channel-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="channel-text">
+                <span class="channel-title">Direct Email</span>
+                <span class="channel-sub" id="email-label">topi.virkki@gmail.com</span>
+              </div>
+              <span class="copy-badge" id="copy-badge">Copy</span>
+            </div>
+
+            <div class="channel-card location-channel">
+              <div class="channel-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="channel-text">
+                <span class="channel-title">Location</span>
+                <span class="channel-sub">Espoo, Finland</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="brand-monogram">&lt;TV /&gt;</span>
+        <p>© <span id="current-year"></span> Topi Virkki. Built with clean HTML, CSS &amp; vanilla JS.</p>
+      </div>
+      <div class="footer-right">
+        <button class="terminal-badge" id="footer-terminal-btn">
+          <span>&gt; SYS 64738</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Retro Terminal Easter Egg Modal -->
+  <div class="modal-overlay" id="retro-modal" aria-hidden="true" role="dialog" aria-label="Commodore 64 Terminal">
+    <div class="retro-window">
+      <div class="retro-header">
+        <span class="retro-title">COMMODORE 64 BASIC V2</span>
+        <button class="retro-close" id="retro-close" aria-label="Close Terminal">&times;</button>
+      </div>
+      <div class="retro-body">
+        <p class="c64-text">**** COMMODORE 64 BASIC V2 ****</p>
+        <p class="c64-text">64K RAM SYSTEM  38911 BASIC BYTES FREE</p>
+        <p class="c64-text">READY.</p>
+        <p class="c64-code"><span class="line-num">10</span> PRINT "WELCOME TO TOPI VIRKKI'S RETRO VAULT!"</p>
+        <p class="c64-code"><span class="line-num">20</span> PRINT "30+ YEARS OF CODE: FROM 8-BIT TO CLOUD ARCHITECTURES"</p>
+        <p class="c64-code"><span class="line-num">30</span> PRINT "PASSION FOR CRAFTSMANSHIP &amp; MENTORING TEAMS"</p>
+        <p class="c64-code"><span class="line-num">40</span> GOTO 10</p>
+        <p class="c64-text">RUN</p>
+        <div class="c64-prompt">
+          <span>READY.</span>
+          <span class="c64-cursor"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">Email copied to clipboard!</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
